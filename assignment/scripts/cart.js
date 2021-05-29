@@ -72,3 +72,46 @@ function empty (){
 }
 empty();
 console.log('What\'s in the basket: ', basket);
+
+
+//     STRETCH GOALS
+
+//    ATTEMPT 1
+const maxItems = 5;
+
+function isFull(unit) {
+  if(unit >= maxItems){
+    return true;
+  }//end if
+  return false;
+}//end funciton
+console.log(isFull(basket));
+
+//    ATTEMPT 1
+
+// function addItem (item){
+//   if(isFull(item)){
+//   basket.push(item);
+//   return true;
+//   }//end if
+//   return false;
+// }//end function
+// addItem('kiwi');
+// addItem('apple');
+// addItem('banana');
+// addItem('peach');
+// addItem('pear');
+// addItem('plum');
+// console.log('Items added to basket: ', basket);
+
+//    ATTEMPT 2
+
+function addItem (item){
+  basket.push(item);
+  return true;
+}
+addItem('kiwi');
+addItem('apple');
+addItem('banana');
+addItem('peach');
+console.log('Items added to basket: ', basket);
