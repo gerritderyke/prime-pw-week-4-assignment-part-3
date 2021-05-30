@@ -20,7 +20,7 @@ console.log('***** Cart Functions *****');
 // console.log(addItem('apple'));
 // console.log(addItem('banana'));
 
-//   ATTEMPT 2
+//   ATTEMPT 2 *******
 
 let basket = [];
 console.log('What\'s in the basket:', basket);
@@ -32,6 +32,7 @@ function addItem (item){
 addItem('kiwi');
 addItem('apple');
 addItem('banana');
+addItem('peach');
 console.log('Items added to basket: ', basket);
 
 
@@ -65,7 +66,7 @@ function listItems (inBasket){
 }
 listItems(basket);
 
-//   ATTEMPT 1
+  ATTEMPT 1  *********
 
 function empty (){
   basket = [];
@@ -76,21 +77,23 @@ console.log('What\'s in the basket: ', basket);
 
 //     STRETCH GOALS
 
-//    ATTEMPT 1
+//    ATTEMPT 1   Only seems to work when empty() is commented out
 const maxItems = 5;
 
 function isFull(unit) {
-  if(unit >= maxItems){
+  if(unit.length >= maxItems){
     return true;
   }//end if
   return false;
 }//end funciton
 console.log(isFull(basket));
 
+
+
 //    ATTEMPT 1
 
 // function addItem (item){
-//   if(isFull(item)){
+//   if(isFull(unit)){
 //   basket.push(item);
 //   return true;
 //   }//end if
@@ -107,11 +110,9 @@ console.log(isFull(basket));
 //    ATTEMPT 2
 
 function addItem (item){
+
   basket.push(item);
   return true;
 }
-addItem('kiwi');
-addItem('apple');
-addItem('banana');
-addItem('peach');
+
 console.log('Items added to basket: ', basket);
